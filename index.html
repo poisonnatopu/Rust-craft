@@ -222,6 +222,13 @@
       const converted = amount * rate;
       resultDiv.textContent = `${amount.toFixed(2)} ${from} = ${converted.toFixed(2)} ${to}`;
     }
+
+  document.getElementById('amount').addEventListener ('keydown', function (e) {
+    if (e.key === 'Enter') {
+      convert(); 
+  }
+});
+
   </script>
 </body>
 </html>
